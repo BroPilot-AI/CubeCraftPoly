@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/break_overlay.gd" id="1_overlay"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_overlay"]
+size = Vector3(1.02, 1.02, 1.02)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_overlay"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 0)
+no_depth_test = true
+disable_receive_shadows = true
+
+[node name="BreakOverlay" type="Node3D"]
+script = ExtResource("1_overlay")
+
+[node name="Box" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_overlay")
+material_override = SubResource("StandardMaterial3D_overlay")

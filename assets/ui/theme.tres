@@ -1,0 +1,128 @@
+[gd_resource type="Theme" format=3]
+
+[ext_resource type="FontFile" uid="uid://6k8j6xsqhrsh" path="res://assets/fonts/Fredoka.ttf" id="1_font"]
+[ext_resource type="Texture2D" uid="uid://bl1d5fsduupi0" path="res://assets/ui/kenney/panel.png" id="2_panel"]
+[ext_resource type="Texture2D" uid="uid://chf307vetp4h" path="res://assets/ui/kenney/button.png" id="3_button"]
+[ext_resource type="Texture2D" uid="uid://dwhw2qxgmxsyk" path="res://assets/ui/kenney/button_hover.png" id="4_hover"]
+[ext_resource type="Texture2D" uid="uid://d6m11yqm87al" path="res://assets/ui/kenney/button_pressed.png" id="5_pressed"]
+[ext_resource type="Texture2D" uid="uid://c1a8jky88vm3u" path="res://assets/ui/kenney/button_disabled.png" id="6_disabled"]
+[ext_resource type="Texture2D" uid="uid://8aphg2bv5cyv" path="res://assets/ui/kenney/slider.png" id="7_slider"]
+[ext_resource type="Texture2D" uid="uid://dw8yiefiy1vj2" path="res://assets/ui/kenney/slider_fill.png" id="8_fill"]
+[ext_resource type="Texture2D" uid="uid://cbkkijm6y5xud" path="res://assets/ui/kenney/slider_grabber.png" id="9_grabber"]
+[ext_resource type="Texture2D" uid="uid://dp4toilnnti5g" path="res://assets/ui/kenney/arrow_down.png" id="10_arrow"]
+
+[sub_resource type="FontVariation" id="FontVariation_text"]
+base_font = ExtResource("1_font")
+variation_opentype = {
+2003265652: 600
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_panel"]
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+texture = ExtResource("2_panel")
+texture_margin_left = 12.0
+texture_margin_top = 12.0
+texture_margin_right = 12.0
+texture_margin_bottom = 16.0
+modulate_color = Color(0.3, 0.34, 0.44, 0.94)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_button"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("3_button")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hover"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("4_hover")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pressed"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+texture = ExtResource("5_pressed")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_disabled"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+texture = ExtResource("6_disabled")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+modulate_color = Color(1, 1, 1, 0.5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_focus"]
+draw_center = false
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84, 0.25, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_slider"]
+texture = ExtResource("7_slider")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fill"]
+texture = ExtResource("8_fill")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[resource]
+default_font = SubResource("FontVariation_text")
+Button/colors/font_color = Color(0.17, 0.2, 0.27, 1)
+Button/colors/font_disabled_color = Color(0.17, 0.2, 0.27, 0.5)
+Button/colors/font_focus_color = Color(0.17, 0.2, 0.27, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_disabled")
+Button/styles/focus = SubResource("StyleBoxFlat_focus")
+Button/styles/hover = SubResource("StyleBoxTexture_hover")
+Button/styles/hover_pressed = SubResource("StyleBoxTexture_pressed")
+Button/styles/normal = SubResource("StyleBoxTexture_button")
+Button/styles/pressed = SubResource("StyleBoxTexture_pressed")
+HSlider/icons/grabber = ExtResource("9_grabber")
+HSlider/icons/grabber_highlight = ExtResource("9_grabber")
+HSlider/styles/grabber_area = SubResource("StyleBoxTexture_fill")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_fill")
+HSlider/styles/slider = SubResource("StyleBoxTexture_slider")
+OptionButton/icons/arrow = ExtResource("10_arrow")
+Panel/styles/panel = SubResource("StyleBoxTexture_panel")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_panel")

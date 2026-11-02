@@ -1,0 +1,169 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/settings_menu.gd" id="1_settings"]
+
+[node name="SettingsMenu" type="CanvasLayer"]
+script = ExtResource("1_settings")
+visible = false
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200
+offset_top = -290
+offset_right = 200
+offset_bottom = 290
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin"]
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Panel/Margin/VBox"]
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="FOVRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="FOVLabelTitle" type="Label" parent="Panel/Margin/VBox/FOVRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "FOV"
+
+[node name="FOVSlider" type="HSlider" parent="Panel/Margin/VBox/FOVRow"]
+size_flags_horizontal = 3
+min_value = 60.0
+max_value = 110.0
+value = 75.0
+
+[node name="FOVLabel" type="Label" parent="Panel/Margin/VBox/FOVRow"]
+custom_minimum_size = Vector2(60, 0)
+text = "75"
+
+[node name="SensRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="SensLabelTitle" type="Label" parent="Panel/Margin/VBox/SensRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Mouse Sensitivity"
+
+[node name="SensSlider" type="HSlider" parent="Panel/Margin/VBox/SensRow"]
+size_flags_horizontal = 3
+min_value = 0.0005
+max_value = 0.005
+step = 0.0001
+value = 0.002
+
+[node name="SensLabel" type="Label" parent="Panel/Margin/VBox/SensRow"]
+custom_minimum_size = Vector2(60, 0)
+text = "0.0020"
+
+[node name="ViewRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="ViewLabelTitle" type="Label" parent="Panel/Margin/VBox/ViewRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "View Distance"
+
+[node name="ViewSlider" type="HSlider" parent="Panel/Margin/VBox/ViewRow"]
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 8.0
+step = 1.0
+value = 4.0
+
+[node name="ViewLabel" type="Label" parent="Panel/Margin/VBox/ViewRow"]
+custom_minimum_size = Vector2(80, 0)
+text = "4 chunks"
+
+[node name="VolumeRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="VolumeLabelTitle" type="Label" parent="Panel/Margin/VBox/VolumeRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="Panel/Margin/VBox/VolumeRow"]
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="VolumeLabel" type="Label" parent="Panel/Margin/VBox/VolumeRow"]
+custom_minimum_size = Vector2(60, 0)
+text = "100%"
+
+[node name="MusicRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="MusicLabelTitle" type="Label" parent="Panel/Margin/VBox/MusicRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="Panel/Margin/VBox/MusicRow"]
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 0.7
+
+[node name="MusicLabel" type="Label" parent="Panel/Margin/VBox/MusicRow"]
+custom_minimum_size = Vector2(60, 0)
+text = "70%"
+
+[node name="SkinRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="SkinLabelTitle" type="Label" parent="Panel/Margin/VBox/SkinRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Skin"
+
+[node name="SkinOption" type="OptionButton" parent="Panel/Margin/VBox/SkinRow"]
+size_flags_horizontal = 3
+
+[node name="ModeRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="ModeLabelTitle" type="Label" parent="Panel/Margin/VBox/ModeRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Game Mode"
+
+[node name="ModeOption" type="OptionButton" parent="Panel/Margin/VBox/ModeRow"]
+size_flags_horizontal = 3
+
+[node name="DisplayRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+
+[node name="SmoothCheck" type="CheckButton" parent="Panel/Margin/VBox/DisplayRow"]
+size_flags_horizontal = 3
+button_pressed = true
+text = "Smooth edges"
+
+[node name="FullscreenCheck" type="CheckButton" parent="Panel/Margin/VBox/DisplayRow"]
+size_flags_horizontal = 3
+text = "Fullscreen"
+
+[node name="ControlsButton" type="Button" parent="Panel/Margin/VBox"]
+text = "Controls"
+
+[node name="ButtonRow" type="HBoxContainer" parent="Panel/Margin/VBox"]
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="BackButton" type="Button" parent="Panel/Margin/VBox/ButtonRow"]
+custom_minimum_size = Vector2(120, 0)
+text = "Back"
+
+[node name="TitleButton" type="Button" parent="Panel/Margin/VBox/ButtonRow"]
+visible = false
+custom_minimum_size = Vector2(160, 0)
+text = "Quit to Title"

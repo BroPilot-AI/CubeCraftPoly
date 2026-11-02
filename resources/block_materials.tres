@@ -1,0 +1,204 @@
+[gd_resource type="Resource" script_class="BlockMaterialsResource" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/01_dirt_Atlas.png" id="1_g0tet"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/02_grass_Atlas.png" id="2_46jux"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/03_stone_Atlas.png" id="3_diyu1"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/04_wood_planks_Atlas.png" id="4_ly57m"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/05_brick_Atlas.png" id="5_1x2lc"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/06_grey_bricks_Atlas.png" id="6_d16my"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/07_coal_Atlas.png" id="7_52pga"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/08_diamond_Atlas.png" id="8_2dsh5"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/09_crystal_Atlas.png" id="9_uxrow"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/10_metal_Atlas.png" id="10_idfu5"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/11_ice_Atlas.png" id="11_w24vv"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/12_snow_Atlas.png" id="12_iwbar"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/13_cheese_Atlas.png" id="13_56qym"]
+[ext_resource type="Texture2D" path="res://assets/cubeworld/blocks/14_blank_Atlas.png" id="14_uytuh"]
+[ext_resource type="Script" path="res://resources/block_materials_resource.gd" id="15_tycwj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6ssf"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("1_g0tet")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqwgk"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("2_46jux")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2oek"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("3_diyu1")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_on235"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("4_ly57m")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45rww"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("5_1x2lc")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bkcp"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("6_d16my")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j8vk4"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("7_52pga")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmikn"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("8_2dsh5")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pakjv"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("9_uxrow")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txad2"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("10_idfu5")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkb7h"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("11_w24vv")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_otgpc"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("12_iwbar")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2g4rd"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("13_56qym")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_854bu"]
+resource_name = "Atlas"
+albedo_texture = ExtResource("14_uytuh")
+metallic = 0.4
+metadata/extras = {
+"fromFBX": {
+"isTruePBR": false,
+"shadingModel": "Phong"
+}
+}
+metadata/_gltf_primary_texture_coord = 0
+
+[resource]
+script = ExtResource("15_tycwj")
+data = {
+1: SubResource("StandardMaterial3D_c6ssf"),
+2: SubResource("StandardMaterial3D_vqwgk"),
+3: SubResource("StandardMaterial3D_q2oek"),
+4: SubResource("StandardMaterial3D_on235"),
+5: SubResource("StandardMaterial3D_45rww"),
+6: SubResource("StandardMaterial3D_3bkcp"),
+7: SubResource("StandardMaterial3D_j8vk4"),
+8: SubResource("StandardMaterial3D_fmikn"),
+9: SubResource("StandardMaterial3D_pakjv"),
+10: SubResource("StandardMaterial3D_txad2"),
+11: SubResource("StandardMaterial3D_nkb7h"),
+12: SubResource("StandardMaterial3D_otgpc"),
+13: SubResource("StandardMaterial3D_2g4rd"),
+14: SubResource("StandardMaterial3D_854bu")
+}

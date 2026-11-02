@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/cloud_rig.gd" id="1_clouds"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cloud"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cloud"]
+albedo_color = Color(1, 1, 1, 0.85)
+transparency = 1
+disable_fog = true
+
+[sub_resource type="MultiMesh" id="MultiMesh_clouds"]
+resource_local_to_scene = true
+transform_format = 1
+mesh = SubResource("BoxMesh_cloud")
+
+[node name="CloudRig" type="Node3D"]
+script = ExtResource("1_clouds")
+
+[node name="Clouds" type="MultiMeshInstance3D" parent="."]
+cast_shadow = 0
+material_override = SubResource("StandardMaterial3D_cloud")
+multimesh = SubResource("MultiMesh_clouds")
